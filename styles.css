@@ -1,0 +1,26 @@
+body {
+    background-color: #1E1E1E;
+    color: white;
+}
+
+.landing {
+    margin-top: 300px;
+    margin-bottom: 300px;
+    text-align: center;
+
+}
+
+.landing h1 {
+    font-size: 2em;
+    font-weight: bold;
+    
+}
+
+.landing input{
+    width: 70%;
+    height: 50px;
+}
+
+.landing input:focus{
+    border: 3px solid #555;
+}

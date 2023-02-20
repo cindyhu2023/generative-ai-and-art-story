@@ -1,6 +1,9 @@
 body {
     background-color: #1E1E1E;
     color: white;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .landing {
@@ -17,7 +20,7 @@ body {
 }
 
 .landing input{
-    width: 70%;
+    width: 90%;
     height: 50px;
 }
 

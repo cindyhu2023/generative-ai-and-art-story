@@ -1,29 +1,14 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="landing">
-        <h1>[Placeholder for title]</h1>
-        <h2>Dream up something magical:</h2>
-        <input type="text" id="input" placeholder="Hint: imaging an animal, in a place, doing a thing.">
-    </div>
-    <div class="transition">
-
-    </div>
-
-    <div class="explainer">
+export default function MainContent() {
+    return (
+    <div>
+        <div className="explainer">
         <h2>Generative Art Explainer</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
             aliquip ex ea commodo consequat. 
         </p>
     </div>
-    <div class="main-content">
+    <div className="main-content">
         <h2>[placeholder for subtitle]</h2>
         <p>
             Decades after the death of Salvador Dalí, artist and creative technologist Nathan Shipley worked to bring the 
@@ -75,7 +60,6 @@
         </p>
 
     </div>
-    <script src="index.js"></script>
-    
-</body>
-</html>
+    </div>
+    )
+}

@@ -1,12 +1,18 @@
 import { useState } from "react";
 import styles from "./index.module.css";
+import { ColorRing } from  'react-loader-spinner';
 
 export default function AIImage() {
     const [promptInput, setPromptInput] = useState("");
-    const [result, setResult] = useState();
+    const [result, setResult] = useState("/default.png");
+    const [loading, setLoading] = useState(false);
+    const [title, setTitle] = useState("Dream up something magical...");
   
     async function onSubmit(event) {
       event.preventDefault();
+      setLoading(true);
+      setTitle("Brewing your dream...");
+      setResult();
       try {
         const response = await fetch("/api/generate", {
           method: "POST",
@@ -20,20 +26,31 @@ export default function AIImage() {
         if (response.status !== 200) {
           throw data.error || new Error(`Request failed with status ${response.status}`);
         }
-  
+        setLoading(false);
+        setTitle(promptInput);
         setResult(data.result);
         setPromptInput("");
       } catch(error) {
         // Consider implementing your own error handling logic here
         console.error(error);
         alert(error.message);
+        setLoading(false);
       }
     }
 
     return (
-        <main className={styles.main}>
-        <h3>Dream up something magical...</h3>
+        <div className={styles.aiImage}>
+        <h3>{title}</h3>
         <img src={result} className={styles.icon} />
+        <ColorRing
+            visible={loading}
+            height="80"
+            width="80"
+            ariaLabel="blocks-loading"
+            wrapperStyle={{}}
+            wrapperClass="blocks-wrapper"
+            colors={['#01BAEF', '#0CBABA', '#380036', '#26081C', '#150811']}
+            />
         <form onSubmit={onSubmit}>
           <input
             type="text"
@@ -45,6 +62,6 @@ export default function AIImage() {
           <input type="submit" value="Go" />
         </form>
         {/* <div className={styles.result}>{result}</div> */}
-      </main>
+      </div>
     )
 }

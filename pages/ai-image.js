@@ -1,10 +1,10 @@
 import { useState } from "react";
 import styles from "./index.module.css";
-import { ColorRing } from  'react-loader-spinner'
+import { ColorRing } from  'react-loader-spinner';
 
 export default function AIImage() {
     const [promptInput, setPromptInput] = useState("");
-    const [result, setResult] = useState();
+    const [result, setResult] = useState("/default.png");
     const [loading, setLoading] = useState(false);
     const [title, setTitle] = useState("Dream up something magical...");
   
@@ -39,7 +39,7 @@ export default function AIImage() {
     }
 
     return (
-        <main className={styles.main}>
+        <div className={styles.aiImage}>
         <h3>{title}</h3>
         <img src={result} className={styles.icon} />
         <ColorRing
@@ -62,6 +62,6 @@ export default function AIImage() {
           <input type="submit" value="Go" />
         </form>
         {/* <div className={styles.result}>{result}</div> */}
-      </main>
+      </div>
     )
 }

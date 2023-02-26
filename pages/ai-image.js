@@ -12,7 +12,7 @@ export default function AIImage() {
       event.preventDefault();
       setLoading(true);
       setTitle("Brewing your dream...");
-      setResult();
+      setResult("");
       try {
         const response = await fetch("/api/generate", {
           method: "POST",
@@ -44,8 +44,8 @@ export default function AIImage() {
         <img src={result} className={styles.icon} />
         <ColorRing
             visible={loading}
-            height="80"
-            width="80"
+            height="150"
+            width="150"
             ariaLabel="blocks-loading"
             wrapperStyle={{}}
             wrapperClass="blocks-wrapper"

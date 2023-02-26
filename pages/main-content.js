@@ -1,13 +1,8 @@
+import styles from "./index.module.css";
+
 export default function MainContent() {
     return (
     <div>
-        <div className="explainer">
-        <h2>Generative Art Explainer</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-            aliquip ex ea commodo consequat. 
-        </p>
-    </div>
     <div className="main-content">
         <h2>[placeholder for subtitle]</h2>
         <p>

@@ -1,29 +1,9 @@
 body {
-    background-color: #1E1E1E;
+    background-color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
     color: white;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.landing {
-    margin-top: 300px;
-    margin-bottom: 300px;
-    text-align: center;
-
-}
-
-.landing h1 {
-    font-size: 2em;
-    font-weight: bold;
-    
-}
-
-.landing input{
-    width: 90%;
-    height: 50px;
-}
-
-.landing input:focus{
-    border: 3px solid #555;
-}

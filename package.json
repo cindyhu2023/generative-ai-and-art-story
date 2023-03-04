@@ -17,8 +17,10 @@
     "react-before-after-slider-component": "^1.1.6",
     "react-dom": "^18.2.0",
     "react-loader-spinner": "^5.3.4",
+    "react-router-dom": "^6.8.2",
     "react-scroll-motion": "^0.3.2",
-    "react-spinners": "^0.13.8"
+    "react-spinners": "^0.13.8",
+    "react-twitter-embed": "^4.0.4"
   },
   "engines": {
     "node": ">=14.6.0"

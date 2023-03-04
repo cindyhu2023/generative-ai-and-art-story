@@ -1,13 +1,5 @@
 import styles from './index.module.css';
-import ReactBeforeSliderComponent from 'react-before-after-slider-component';
-import 'react-before-after-slider-component/dist/build.css';
 
-const FIRST_IMAGE = {
-    imageUrl: '/before.png'
-  };
-const SECOND_IMAGE = {
-    imageUrl: '/after.png'
- };
 
 export default function Explainer() {
     return (
@@ -17,12 +9,7 @@ export default function Explainer() {
             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
             aliquip ex ea commodo consequat. 
         </p>
-        <div className={styles.slider}>
-        <ReactBeforeSliderComponent
-            firstImage={FIRST_IMAGE}
-            secondImage={SECOND_IMAGE}
-        />
-        </div>
+
         
         </div>
     )

@@ -1,10 +1,22 @@
 import styles from "./index.module.css";
+import { TwitterTimelineEmbed, TwitterTweetEmbed} from 'react-twitter-embed';
+import ReactBeforeSliderComponent from 'react-before-after-slider-component';
+import 'react-before-after-slider-component/dist/build.css';
+
+const FIRST_IMAGE = {
+    imageUrl: '/before.png'
+  };
+const SECOND_IMAGE = {
+    imageUrl: '/after.png'
+ };
 
 export default function MainContent() {
     return (
-    <div>
+    <div id="main-article">
     <div className="main-content">
         <h2>[placeholder for subtitle]</h2>
+        <div className={styles.section1}>
+        <div>
         <p>
             Decades after the death of Salvador Dalí, artist and creative technologist Nathan Shipley worked to bring the 
             iconic surrealist painter back to life with deep fake technology. New technologies gave him “the ability to 
@@ -26,6 +38,19 @@ export default function MainContent() {
             Still, concerns about the new technology’s ethics confound the art world. Even Shipley voiced concerns about how AI, when
              used irresponsibly, could dampen creativity and the authenticity of visual art
         </p>
+        </div>
+        <img src="/shiply.png"/>
+        
+        </div>
+        <div className={styles.slider}>
+        <ReactBeforeSliderComponent
+            firstImage={FIRST_IMAGE}
+            secondImage={SECOND_IMAGE}
+        />
+        </div>
+        <TwitterTweetEmbed
+        tweetId={'1599672070652461056'}
+        />
         <p>
             Jon Lam, a storyboard artist at Riot Games, said that he can’t define art. But he said that using generative AI isn’t a skill but something anybody can do. He compared it to putting a three-year-old in front of an AI generation program, where they’re “just typing stuff and creating something amazing,” using data from millions of artists. 
             In contrast, Associate Professor at San Francisco Art Institute Meredith Tromble said that for artists, working with new technologies not only helps them make the art that they want to make, but it also attracts attention and interest. She added that, right now, generative AI is “seductive” for artists, and they need to approach it “from a standpoint of curiosity rather than fear.”

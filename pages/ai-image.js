@@ -12,7 +12,7 @@ export default function AIImage() {
       event.preventDefault();
       setLoading(true);
       setTitle("Brewing your dream...");
-      setResult("");
+      setResult();
       try {
         const response = await fetch("/api/generate", {
           method: "POST",
@@ -62,6 +62,8 @@ export default function AIImage() {
           <input type="submit" value="Go" />
         </form>
         {/* <div className={styles.result}>{result}</div> */}
+        {/* <Link to="#main-article">or click here to view the article directly</Link> */}
+        <a href="#main-article">or click here to view the article directly</a>
       </div>
     )
 }

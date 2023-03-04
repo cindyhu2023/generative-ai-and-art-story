@@ -7,12 +7,13 @@ import Landing from "./landing";
 import AIImage from "./ai-image";
 import MainContent from "./main-content";
 import Explainer from "./explainer";
+import Transition from "./transition";
 
 export default function MyApp() {
     const FadeUp = batch(Fade(), Move(), Sticky());
   return    ( <div>
   <Head>
-    <title>OpenAI Quickstart</title>
+    <title>Generate AI and Art</title>
     <link rel="icon" href="/dog.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
@@ -25,8 +26,10 @@ export default function MyApp() {
   <ScrollPage>
   <Animator animation={Fade()}><AIImage /></Animator>
   </ScrollPage>
+  <ScrollPage>
+  <Animator animation={FadeUp}><Transition /></Animator>
+  </ScrollPage>
   </ScrollContainer>
-  <Explainer />
   <MainContent />
   {/* <ScrollPage>
   <Animator animation={FadeUp}><MainContent /></Animator>

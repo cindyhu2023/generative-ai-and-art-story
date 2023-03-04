@@ -19,6 +19,7 @@
     "react-loader-spinner": "^5.3.4",
     "react-router-dom": "^6.8.2",
     "react-scroll-motion": "^0.3.2",
+    "react-social-media-embed": "^2.3.4",
     "react-spinners": "^0.13.8",
     "react-twitter-embed": "^4.0.4"
   },

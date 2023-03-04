@@ -12,13 +12,6 @@
   margin-top: 300px;
   margin-bottom: 300px;
   text-align: center;
-
-}
-
-.landing h1 {
-  font-size: 2em;
-  font-weight: bold;
-  
 }
 
 .landing input{
@@ -103,11 +96,29 @@
   margin-right: auto;
 }
 
-.section1{
-  display: flex;
-}
-
-.section1 img {
+/* .section1 img {
   width: 200px;
   height:auto;
+} */
+
+.gridDisplay {
+  display: grid;
+  grid-template-columns: 70% 30%;
 }
+
+.shipleyImg {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.shipleyImg img {
+  width: 90%;
+}
+
+.imgSource {
+  font-size: 10px;
+  color: #555555;
+  text-align: center;
+}
+

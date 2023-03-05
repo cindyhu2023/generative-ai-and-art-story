@@ -1,6 +1,9 @@
 body {
     background-color: #000000;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* background-image: url('/bg_all.gif');
+    height: 100vh;
+    background-size: cover; */
+    font-family: 'Roboto', sans-serif;
     color: white;
     width: 70%; 
     margin-left: auto;
@@ -20,5 +23,9 @@ h2 {
 p {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #01BAEF;
 }
 

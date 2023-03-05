@@ -6,7 +6,7 @@ export default function Transition() {
             <h1>Wait a minute...</h1>
             <h1>Did you just create art with AI?</h1>
             {/* TODO: change to a button */}
-            <a href="https://www.artaigallery.com/pages/what-is-ai-generated-art">External read: What Is AI-generated Art?</a>
+            <a href="https://www.artaigallery.com/pages/what-is-ai-generated-art" className={styles.button}>External read: What Is AI-generated Art?</a>
         </div>
     )
 }

@@ -20,13 +20,11 @@ export default function MyApp() {
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet" />
 <link href="https://fonts.cdnfonts.com/css/din-alternate" rel="stylesheet" />
   </Head>
+  <img src={'/bg_all.gif'} className={styles.bg}/>
   <ScrollContainer>
   <ScrollPage>
   <Animator animation={Fade()}>  <Landing /></Animator>
   </ScrollPage>
-  {/* <Animator animation={FadeUp}><Landing /></Animator> */}
-  {/* <Landing /> */}
-
   <ScrollPage>
   <Animator animation={Fade()}><AIImage /></Animator>
   </ScrollPage>
@@ -35,10 +33,6 @@ export default function MyApp() {
   </ScrollPage>
   </ScrollContainer>
   <MainContent />
-  {/* <ScrollPage>
-  <Animator animation={FadeUp}><MainContent /></Animator>
-  </ScrollPage>
-   */}
   
 
 </div>)

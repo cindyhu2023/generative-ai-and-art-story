@@ -59,7 +59,7 @@ export default function AIImage() {
             value={promptInput}
             onChange={(e) => setPromptInput(e.target.value)}
           />
-          <input type="submit" value="Go" />
+          <input className={styles.button} type="submit" value="Go"/>
         </form>
         {/* <div className={styles.result}>{result}</div> */}
         {/* <Link to="#main-article">or click here to view the article directly</Link> */}

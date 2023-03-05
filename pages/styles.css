@@ -18,6 +18,7 @@ h1 {
 h2 {
     font-size: 36px;
     font-family: 'DIN Alternate', sans-serif;
+    color:#8fecfe;
 }
 
 p {
@@ -29,3 +30,20 @@ a {
     color: #01BAEF;
 }
 
+@media all and (max-width: 499px) {
+    body {
+        width: 90%;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+    
+  }

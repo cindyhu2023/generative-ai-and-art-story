@@ -45,6 +45,9 @@ export default function Section1() {
             secondImage={SECOND_IMAGE}
         />
         <p className={styles.imgSource}>Source: nathanshipley.com</p>
+        <p className={styles.caption}>In a project dating back to 2020, Shipley used machine learning to transform paintings of historical 
+        figures and cartoon characters into realistic images. The 20 re-imagined portraits included Mona Lisa, 
+        Frida Kahlo, Miguel from Coco, George Washington, Lil Miquela, Benjamin Franklin and more.</p>
         </div>
         </div>
     )

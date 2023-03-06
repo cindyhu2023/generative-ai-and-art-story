@@ -7,6 +7,9 @@
   /* margin-left: auto;
   margin-right: auto; */
 }
+.mobileBg {
+  display: none;
+}
 .bg {
   position: fixed;
   object-fit: cover;
@@ -131,6 +134,11 @@
   font-size: 70px;
 }
 
+.caption {
+  font-size: 12px;
+  color: #b6b6b6;
+}
+
 .button {
   padding: 10px 24px;
   background-color: black;
@@ -179,12 +187,29 @@
   margin-right: auto;
 }
 
-@media all and (max-width: 499px) {
+@media (max-width: 820px) {
   .transition h1{
     font-size: 36px;
   }
 
-  .button {
-    
+  .landingVideo {
+    display: none;
+    opacity: 0;
   }
+
+  .mobileBg {
+    display: block;
+    position: fixed;
+    /* object-fit: cover; */
+    width: 100%;
+    /* height: 100vh; */
+    top:0;
+    left:0;
+    z-index: -1;
+  }
+
+  .slider {
+    width:70%;
+  }
+
 }

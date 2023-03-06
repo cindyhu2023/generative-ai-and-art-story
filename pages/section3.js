@@ -23,7 +23,18 @@ export default function Section3() {
                 />
             </div>
         <p>
-        Lam started the hashtag <a href="https://www.instagram.com/p/CmIklJqrVyU/?utm_source=ig_web_copy_link">#CreateDontScrape </a>on Twitter and Instagram to push back against 
+        Matthew Butterick, who is a lawyer and visual artist, is filing a lawsuit against Github Copilot for 
+        “unprecedented open-source software piracy,” according to his website. Partnering with Joseph Saveri Law Firm, 
+        they are responding to AI systems that are trained using copyrighted work from artists, without any consent or 
+        compensation. 
+        </p>
+        <p>
+        The artist plaintiffs include Sarah Andersen, Kelly McKernan and Karla Oritz who are filing against Stability 
+        AI, DeviantArt, and Midjourney for using the tool Stable Diffusion to remix copyrighted work. Butterick added,
+         “The image-gen­er­a­tor com­pa­nies have made their views clear. Now they can hear from artists.” 
+        </p>
+        <p>
+        With similar intentions, Lam started the hashtag <a href="https://www.instagram.com/p/CmIklJqrVyU/?utm_source=ig_web_copy_link">#CreateDontScrape </a>on Twitter and Instagram to push back against 
         monetized AI art. His movement is reacting specifically to the company Epic Games scraping 
         from artists. The video game and software developer owns ArtStation, a website for artists 
         to upload portfolios, and they used that artwork to train their generative AI technology 

@@ -81,7 +81,7 @@
 }
 .aiImage img {
   margin-bottom: 40px;
-  width: 80%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -223,8 +223,15 @@
 }
 
 @media (max-width: 499px) {
+  .aiImage h3 {
+    font-size: 24px;
+    line-height: 20px;
+    margin-bottom: 10px;
+
+  }
   .aiImage img {
-    margin-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 5px;
     width: 70%;
   }
 

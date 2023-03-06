@@ -188,6 +188,9 @@
 }
 
 @media (max-width: 820px) {
+  .transition {
+    width: 90%;
+  }
   .transition h1{
     font-size: 36px;
   }
@@ -195,6 +198,11 @@
   .landingVideo {
     display: none;
     opacity: 0;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 8px;
   }
 
   .mobileBg {
@@ -210,6 +218,14 @@
 
   .slider {
     width:70%;
+  }
+
+}
+
+@media (max-width: 499px) {
+  .aiImage img {
+    margin-bottom: 15px;
+    width: 70%;
   }
 
 }
